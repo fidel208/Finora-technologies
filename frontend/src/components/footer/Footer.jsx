@@ -5,37 +5,58 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <>
-      <div className="footer">
-        <div className="footer-top">
-          <div className="top1">
-            <h1>Finora Technologies</h1>
-            <p>We turn simple ideas into smart software</p>
-            <span id="subscribe">
-              <input type="text" name="subscribe" id="subscribe" />
-              <button>Subscribe</button>
+      <footer>
+        <div className="footer">
+          <div className="footer-top">
+            <div className="top1">
+              <div className="foot-top-words">
+                <h1>Finora Technologies</h1>
+                <p>
+                  We transform simple ideas into smart, high-performing
+                  software, built for reliability and real-time responsiveness.
+                </p>
+              </div>
+              <span id="subscribe">
+                <input
+                  type="email"
+                  name="subscribe"
+                  id="subscribe"
+                  placeholder="your@email.com"
+                />
+                <button>Subscribe</button>
+              </span>
+            </div>
+            <div className="top2">
+              <h1>Company</h1>
+              <Link to={"/about"}>About</Link>
+              <Link to={"/services"}>Services</Link>
+              <Link to={"/projects"}>Projects</Link>
+              <Link to={"/contact"}>Contact</Link>
+            </div>
+            <div className="top3">
+              <h1>Services</h1>
+              <Link>Web applications</Link>
+              <Link>Mobile applications</Link>
+            </div>
+            <div className="top4">
+              <h1>Contact</h1>
+              <Link>Email us</Link>
+              <Link>Whatsapp</Link>
+              <Link>Call us</Link>
+            </div>
+          </div>
+          <div className="footer-bottom">
+            <p>
+              &copy; <span>{new Date().getFullYear()}</span>. Finora
+              Technologies. All rights reserved
+            </p>
+            <span className="footer-icons">
+              <i className="fa-brands fa-whatsapp"></i>
+              <i className="fa-regular fa-envelope"></i>
             </span>
           </div>
-          <div className="top2">
-            <h1>Company</h1>
-            <Link to={"/about"}>About</Link>
-            <Link to={"/services"}>Services</Link>
-            <Link to={"/projects"}>Projects</Link>
-            <Link to={"/contact"}>Contact</Link>
-          </div>
-          <div className="top3">
-            <h1>Services</h1>
-            <Link>Web applications</Link>
-            <Link>Mobile applications</Link>
-          </div>
         </div>
-        <hr />
-        <div className="footer-bottom">
-          <p>
-            &copy; <span id="year"></span>. Finora Technologies. All rights
-            reserved
-          </p>
-        </div>
-      </div>
+      </footer>
     </>
   );
 }

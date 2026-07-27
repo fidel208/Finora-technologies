@@ -1,4 +1,137 @@
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1d364e;
+  color: white;
+}
 .footer {
   width: 63%;
   height: 40dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 200px;
+  border-bottom: solid 1px white;
+  padding-bottom: 50px;
+}
+#footer-logo {
+  width: 80px;
+  height: 80px;
+}
+.top1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.foot-top-words {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.footer h1 {
+  font-size: 25px;
+}
+.top1 p {
+  font-size: 18px;
+  max-width: 300px;
+}
+#subscribe {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+#subscribe input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: solid 2px white;
+}
+#subscribe input:focus {
+  border: solid 2px #239b56;
+}
+#subscribe button {
+  width: 120px;
+  height: 50px;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #239b56;
+  background-color: #e2f3ec;
+  border: solid 2px #239b56;
+}
+#subscribe button:hover {
+  background-color: #c2e5d8;
+}
+.top2 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.top2 a {
+  color: #e2f3ec;
+  text-decoration: none;
+  font-size: 18px;
+}
+.top2 a:hover {
+  color: #239b56;
+}
+.top3 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.top3 a {
+  color: #e2f3ec;
+  text-decoration: none;
+  font-size: 18px;
+}
+.top3 a:hover {
+  color: #239b56;
+}
+.top4 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.top4 a {
+  color: #e2f3ec;
+  text-decoration: none;
+  font-size: 18px;
+}
+.top4 a:hover {
+  color: #239b56;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-bottom p {
+  font-size: 18px;
+}
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+.footer-icons i {
+  font-size: 20px;
+  color: #239b56;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-icons i:hover {
+  background-color: #2b4f70;
 }

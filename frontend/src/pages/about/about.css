@@ -1,0 +1,83 @@
+#about {
+  background-color: #faf5fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+.about {
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#about h1 {
+  font-size: 20px;
+  color: #239b56;
+}
+.about-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#about-sentence {
+  font-size: 30px;
+  font-weight: bold;
+}
+.about-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about-details span {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about-details p {
+  width: 600px;
+}
+.about-details img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.about-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.about-bottom p {
+  font-size: 30px;
+}
+.tools {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+.web {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.web span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #239b56;
+  background-color: #e2f3ec;
+  border: solid 2px #239b56;
+  transition: transform 0.5s ease;
+}
+.web span:hover {
+  transform: translateY(-5px);
+}

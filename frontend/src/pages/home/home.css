@@ -13,8 +13,14 @@
   align-items: center;
   flex-direction: column;
   scroll-behavior: smooth;
+  background-color: #faf5fc;
 }
 .home section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home section > div {
   width: 63%;
 }
 .home-section {
@@ -64,10 +70,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease;
 }
 .home-s1-btns button:hover {
   background-color: #166337;
   border: solid 1px #bef3dd;
+  transform: translateY(-2px);
 }
 .home-s1-bottom {
   display: flex;
@@ -82,6 +90,7 @@
 .home-s1-bottom a {
   color: #239b56;
   text-decoration: none;
+  transition: transform 0.5s ease;
 }
 .home-s1-bottom a:hover {
   transform: translateY(-2px);
@@ -132,10 +141,20 @@
   grid-template-columns: 100%;
   grid-template-rows: 50% 50%;
   text-decoration: none;
-  animation: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .works a:hover {
   transform: translateY(-3px);
+}
+.link-top {
+  background-position: center;
+  background-size: cover;
+}
+#work-1 {
+  background-image: url(../../assets/Growssify.png);
+}
+#work-2 {
+  background-image: url(../../assets/kasivodrums.png);
 }
 .link-bottom {
   display: flex;
@@ -198,38 +217,4 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-
-.connect {
-  height: 40dvh;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-}
-.connect h1 {
-  font-size: 25px;
-  color: black;
-}
-.connect p {
-  font-size: 20px;
-}
-.connect button {
-  height: 50px;
-  width: 200px;
-  border-radius: 8px;
-  font-size: 20px;
-  border: none;
-  outline: none;
-  background-color: #239b56;
-  color: white;
-}
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #1d364e;
-  color: white;
 }

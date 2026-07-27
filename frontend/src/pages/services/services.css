@@ -1,0 +1,78 @@
+#services {
+  background-color: #faf5fc;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#services h1 {
+  font-size: 20px;
+  color: #239b56;
+}
+.services {
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#make {
+  font-size: 30px;
+}
+.service-words {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.service-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.service-box {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.service-box img {
+  width: 400px;
+  height: 350px;
+  color: #6c3483;
+  border-radius: 10px;
+}
+.service-box span {
+  width: 100%;
+  max-width: 600px;
+}
+.service-container span {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.service-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+.service-box ul > li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+.service-box ul > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background-image: url(../../assets/check_30dp_239B56_FILL0_wght400_GRAD0_opsz24.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.service-box h3 {
+  font-size: 25px;
+  color: black;
+}

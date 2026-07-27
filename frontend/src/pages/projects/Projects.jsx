@@ -1,12 +1,68 @@
 import React from "react";
 import "./projects.css";
+import { Link } from "react-router-dom";
 import Header from "../../components/header/Header";
+import Connect from "../../components/connect/Connect";
+import Footer from "../../components/footer/Footer";
 
 function Projects() {
   return (
     <>
       <Header />
-      <div className="projects"></div>
+      <section id="projects">
+        <div className="projects">
+          <h1>PROJECTS</h1>
+          <p>Our latest builds</p>
+          <div className="projects-container">
+            <div className="project-box">
+              <div className="box-details">
+                <h2>Growssify</h2>
+                <div className="project-type">
+                  <span>Web application</span>
+                  <span>Saas application</span>
+                </div>
+                <p>
+                  A clean, web dashboard application made to help both
+                  onboarding newbies and experienced business experts monitor
+                  their operational cash flow. The application eliminates
+                  complex bookkeeping, letting business owners focus on scaling
+                  their operations.
+                </p>
+
+                <Link to={"https://growssify.vercel.app/"} target="_blank">
+                  Live preview
+                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                </Link>
+              </div>
+              <img src="src/assets/Growssify.png" alt="project-1" />
+            </div>
+            <div className="project-box">
+              <img src="src/assets/kasivodrums.png" alt="project-2" />
+              <div className="box-details">
+                <h2>Kasivo drums</h2>
+                <div className="project-type">
+                  <span>Web application</span>
+                  <span>Personal portfolio</span>
+                </div>
+                <p>
+                  A sleek digital hub built for a professional live drummer to
+                  seamlessly showcase his session gears, performance videos and
+                  handle direct booking inquiries. Features highly optimized
+                  video layout containers, responsive grids, and a frictionless
+                  booking interface.
+                </p>
+
+                <Link to={"https://kasivodrums.vercel.app/"} target="_blank">
+                  Live preview
+                  <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Connect />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,28 @@
+#connect {
+  background-color: #faf5fc;
+}
+.connect {
+  height: 40dvh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.connect h1 {
+  font-size: 25px;
+  color: black;
+}
+.connect p {
+  font-size: 20px;
+}
+.connect button {
+  height: 50px;
+  width: 200px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: #239b56;
+  color: white;
+}
