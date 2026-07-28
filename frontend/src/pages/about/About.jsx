@@ -3,12 +3,14 @@ import "./about.css";
 import Header from "../../components/header/Header";
 import Connect from "../../components/connect/Connect";
 import Footer from "../../components/footer/Footer";
+import { useTheme } from "../../theme/Theme";
 
 function About() {
+  const { mode } = useTheme();
   return (
     <>
       <Header />
-      <section id="about">
+      <section id="about" className={mode}>
         <div className="about">
           <div className="about-top">
             <h1>ABOUT US</h1>

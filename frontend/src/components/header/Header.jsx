@@ -2,20 +2,14 @@ import React, { useState } from "react";
 import "./header.css";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../theme/Theme";
 
 function Header() {
-  const [mode, setMode] = useState("light");
-  const handleModes = () => {
-    if (mode === "light") {
-      setMode("dark");
-    } else {
-      setMode("light");
-    }
-  };
+  const { mode, handleModes } = useTheme();
 
   return (
     <>
-      <div className="header">
+      <div className={`header ${mode}`}>
         <nav>
           <div className="logo">
             <img src="src/assets/finora-rmv.png" alt="finora-logo" />

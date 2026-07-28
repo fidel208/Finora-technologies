@@ -1,5 +1,8 @@
-#connect {
+#connect.light {
   background-color: #faf5fc;
+}
+#connect.dark {
+  background-color: #0b071e;
 }
 .connect {
   height: 40dvh;
@@ -11,10 +14,18 @@
 }
 .connect h1 {
   font-size: 25px;
+}
+.light .connect h1 {
   color: black;
+}
+.dark .connect h1 {
+  color: white;
 }
 .connect p {
   font-size: 20px;
+}
+.dark .connect p {
+  color: #e0dbe2;
 }
 .connect button {
   height: 50px;

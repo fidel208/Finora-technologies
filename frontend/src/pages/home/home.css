@@ -13,7 +13,12 @@
   align-items: center;
   flex-direction: column;
   scroll-behavior: smooth;
+}
+.home.light {
   background-color: #faf5fc;
+}
+.home.dark {
+  background-color: #0b071e;
 }
 .home section {
   width: 100%;
@@ -42,10 +47,18 @@
 .home-s1-top p {
   font-size: 70px;
   max-width: 600px;
+}
+.light .home-s1-top p {
   color: #2c3e50;
+}
+.dark .home-s1-top p {
+  color: #faf5fc;
 }
 .home-s1-top p > strong > span {
   color: #6c3483;
+}
+.dark .home-s1-top p > strong > span {
+  color: #c648f8;
 }
 .home-s1-btns {
   display: flex;
@@ -119,12 +132,18 @@
 .work p {
   font-size: 30px;
 }
+.dark #link-to-projects > p {
+  color: white;
+}
 #link-to-projects a {
   font-size: 20px;
   text-decoration: none;
   display: flex;
   flex-direction: row;
   gap: 5px;
+}
+.dark #link-to-projects a {
+  color: white;
 }
 .works {
   width: 100%;
@@ -164,13 +183,22 @@
 }
 .link-bottom h2 {
   font-size: 22px;
+}
+.light .link-bottom h2 {
   color: black;
+}
+.dark .link-bottom h2 {
+  color: white;
 }
 .link-bottom p {
   font-size: 17px;
+}
+.light .link-bottom p {
   color: #41474e;
 }
-
+.dark .link-bottom p {
+  color: #e0dbe2;
+}
 .builds {
   display: flex;
   flex-direction: column;
@@ -184,6 +212,9 @@
 .builds > p {
   font-size: 30px;
 }
+.dark .builds > p {
+  color: white;
+}
 .builds-container {
   display: flex;
   flex-direction: row;
@@ -194,7 +225,7 @@
   flex-direction: column;
   gap: 10px;
   width: 300px;
-  height: 200px;
+  height: 250px;
   border: solid 1px gray;
   border-radius: 12px;
   padding: 10px 20px;
@@ -212,9 +243,18 @@
 .build-cont h2 {
   font-size: 20px;
 }
+.dark .build-cont h2 {
+  color: white;
+}
+.dark .build-cont p {
+  color: #e0dbe2;
+}
 .build-cont a {
   text-decoration: none;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.dark .build-cont a {
+  color: #e0dbe2;
 }

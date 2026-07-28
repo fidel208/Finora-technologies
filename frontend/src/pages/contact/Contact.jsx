@@ -3,8 +3,11 @@ import "./contact.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../theme/Theme";
 
 function Contact() {
+  const { mode } = useTheme();
+
   const [email, setEmail] = useState("");
   const [fullname, setFullname] = useState("");
   const [phone, setPhone] = useState("");
@@ -46,7 +49,7 @@ function Contact() {
   return (
     <>
       <Header />
-      <section id="contact">
+      <section id="contact" className={mode}>
         <div className="contact">
           <div className="contact-head">
             <h1>CONTACT US</h1>

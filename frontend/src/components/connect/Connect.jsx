@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./connect.css";
+import { useTheme } from "../../theme/Theme";
 
 function Connect() {
+  const { mode } = useTheme();
   return (
     <>
-      <section id="connect">
+      <section id="connect" className={mode}>
         <div className="connect">
           <h1>Have an idea? Let's connect</h1>
           <p>Let’s turn your vision into a powerful, reliable application.</p>

@@ -1,9 +1,14 @@
 #about {
-  background-color: #faf5fc;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
+}
+#about.light {
+  background-color: #faf5fc;
+}
+#about.dark {
+  background-color: #0b071e;
 }
 .about {
   width: 63%;
@@ -24,6 +29,9 @@
   font-size: 30px;
   font-weight: bold;
 }
+.dark #about-sentence {
+  color: white;
+}
 .about-details {
   display: flex;
   flex-direction: row;
@@ -36,6 +44,9 @@
 }
 .about-details p {
   width: 600px;
+}
+.dark .about-details p {
+  color: #e0dbe2;
 }
 .about-details img {
   width: 250px;
@@ -51,6 +62,9 @@
 }
 .about-bottom p {
   font-size: 30px;
+}
+.dark .about-bottom p {
+  color: #e0dbe2;
 }
 .tools {
   display: flex;

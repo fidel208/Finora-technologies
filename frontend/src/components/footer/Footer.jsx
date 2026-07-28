@@ -1,11 +1,13 @@
 import React from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
+import { useTheme } from "../../theme/Theme";
 
 function Footer() {
+  const { mode } = useTheme();
   return (
     <>
-      <footer>
+      <footer className={mode}>
         <div className="footer">
           <div className="footer-top">
             <div className="top1">
@@ -40,9 +42,15 @@ function Footer() {
             </div>
             <div className="top4">
               <h1>Contact</h1>
-              <Link>Email us</Link>
-              <Link>Whatsapp</Link>
-              <Link>Call us</Link>
+              <Link to={"mailto:fidelmuthomi007@gmail.com"} target="_blank">
+                Email us
+              </Link>
+              <Link to={"https://wa.link/m3ih9m"} target="_blank">
+                Whatsapp
+              </Link>
+              <Link to={"tel:+254115931207"} target="_blank">
+                Call us
+              </Link>
             </div>
           </div>
           <div className="footer-bottom">

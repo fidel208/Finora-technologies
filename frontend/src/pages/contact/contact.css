@@ -1,9 +1,14 @@
 #contact {
-  background-color: #faf5fc;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
+}
+#contact.light {
+  background-color: #faf5fc;
+}
+#contact.dark {
+  background-color: #0b071e;
 }
 .contact {
   max-width: 63%;
@@ -21,6 +26,9 @@
   flex-direction: column;
   gap: 10px;
   align-items: center;
+}
+.dark .contact-head {
+  color: #e0dbe2;
 }
 #idea {
   font-size: 30px;

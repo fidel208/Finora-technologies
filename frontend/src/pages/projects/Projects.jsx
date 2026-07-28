@@ -4,12 +4,14 @@ import { Link } from "react-router-dom";
 import Header from "../../components/header/Header";
 import Connect from "../../components/connect/Connect";
 import Footer from "../../components/footer/Footer";
+import { useTheme } from "../../theme/Theme";
 
 function Projects() {
+  const { mode } = useTheme();
   return (
     <>
       <Header />
-      <section id="projects">
+      <section id="projects" className={mode}>
         <div className="projects">
           <h1>PROJECTS</h1>
           <p>Our latest builds</p>

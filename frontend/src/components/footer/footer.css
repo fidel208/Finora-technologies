@@ -3,8 +3,13 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #1d364e;
   color: white;
+}
+footer.light {
+  background-color: #1d364e;
+}
+footer.dark {
+  background-color: #0d0211;
 }
 .footer {
   width: 63%;
@@ -41,6 +46,9 @@ footer {
 .top1 p {
   font-size: 18px;
   max-width: 300px;
+}
+.dark .top1 p {
+  color: #e0dbe2;
 }
 #subscribe {
   display: flex;
@@ -80,6 +88,9 @@ footer {
   text-decoration: none;
   font-size: 18px;
 }
+.dark .top2 a {
+  color: #e0dbe2;
+}
 .top2 a:hover {
   color: #239b56;
 }
@@ -92,6 +103,9 @@ footer {
   color: #e2f3ec;
   text-decoration: none;
   font-size: 18px;
+}
+.dark .top3 a {
+  color: #e0dbe2;
 }
 .top3 a:hover {
   color: #239b56;
@@ -106,6 +120,9 @@ footer {
   text-decoration: none;
   font-size: 18px;
 }
+.dark .top4 a {
+  color: #e0dbe2;
+}
 .top4 a:hover {
   color: #239b56;
 }
@@ -117,6 +134,9 @@ footer {
 }
 .footer-bottom p {
   font-size: 18px;
+}
+.dark .footer-bottom p {
+  color: #e0dbe2;
 }
 .footer-icons {
   display: flex;

@@ -3,12 +3,14 @@ import "./services.css";
 import Header from "../../components/header/Header";
 import Connect from "../../components/connect/Connect";
 import Footer from "../../components/footer/Footer";
+import { useTheme } from "../../theme/Theme";
 
 function Services() {
+  const { mode } = useTheme();
   return (
     <>
       <Header />
-      <section id="services">
+      <section id="services" className={mode}>
         <div className="services">
           <div className="service-words">
             <h1>OUR SERVICES</h1>

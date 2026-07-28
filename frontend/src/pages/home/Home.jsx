@@ -4,12 +4,14 @@ import Header from "../../components/header/Header";
 import { Link } from "react-router-dom";
 import Footer from "../../components/footer/Footer";
 import Connect from "../../components/connect/Connect";
+import { useTheme } from "../../theme/Theme";
 
 function Home() {
+  const { mode } = useTheme();
   return (
     <>
       <Header />
-      <div className="home">
+      <div className={`home ${mode}`}>
         <section id="home">
           <div className="home-section">
             <div className="home-s1-top">

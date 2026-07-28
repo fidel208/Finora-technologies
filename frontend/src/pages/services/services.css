@@ -1,9 +1,14 @@
 #services {
-  background-color: #faf5fc;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#services.light {
+  background-color: #faf5fc;
+}
+#services.dark {
+  background-color: #0b071e;
 }
 #services h1 {
   font-size: 20px;
@@ -18,11 +23,17 @@
 #make {
   font-size: 30px;
 }
+.dark #make {
+  color: #e0dbe2;
+}
 .service-words {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.dark .service-words {
+  color: #e0dbe2;
 }
 .service-container {
   display: flex;
@@ -52,6 +63,10 @@
 .service-box ul {
   list-style: none;
   padding-left: 0;
+  color: #239b56;
+}
+.dark .service-box ul {
+  color: #239b56;
 }
 .service-box ul > li {
   position: relative;
@@ -75,4 +90,10 @@
 .service-box h3 {
   font-size: 25px;
   color: black;
+}
+.dark .service-box h3 {
+  color: white;
+}
+.dark .service-box p {
+  color: #e0dbe2;
 }

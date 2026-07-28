@@ -1,8 +1,13 @@
 #projects {
-  background-color: #faf5fc;
   display: flex;
   justify-content: center;
   padding: 20px 0;
+}
+#projects.light {
+  background-color: #faf5fc;
+}
+#projects.dark {
+  background-color: #0b071e;
 }
 .projects {
   width: 63%;
@@ -16,6 +21,9 @@
 }
 .projects > p {
   font-size: 30px;
+}
+.dark .projects > p {
+  color: #e0dbe2;
 }
 .projects-container {
   display: flex;
@@ -42,6 +50,12 @@
 .box-details h2 {
   font-size: 25px;
   color: black;
+}
+.dark .box-details h2 {
+  color: white;
+}
+.dark .box-details p {
+  color: #e0dbe2;
 }
 .project-type {
   display: flex;
@@ -73,6 +87,9 @@
   gap: 10px;
   align-items: center;
   color: #984ab8;
+}
+.dark .box-details a {
+  color: #c648f8;
 }
 .box-details a:hover {
   color: #6c3483;

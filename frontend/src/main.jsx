@@ -7,6 +7,8 @@ import Services from "./pages/services/Services";
 import Projects from "./pages/projects/Projects";
 import Contact from "./pages/contact/Contact";
 import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./theme/Theme";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -18,6 +20,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </StrictMode>,
 );
