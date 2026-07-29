@@ -40,10 +40,10 @@
 .about-details span {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 .about-details p {
-  width: 600px;
+  max-width: 600px;
 }
 .dark .about-details p {
   color: #e0dbe2;
@@ -94,4 +94,34 @@
 }
 .web span:hover {
   transform: translateY(-5px);
+}
+
+@media (max-width: 1024px) {
+  .about {
+    width: 90%;
+  }
+  .web {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    width: 90%;
+  }
+  #about-sentence {
+    font-size: 25px;
+  }
+  .about-details {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .web span {
+    width: 100px;
+  }
 }

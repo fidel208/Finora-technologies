@@ -66,7 +66,7 @@ function Home() {
               </Link>
             </span>
             <div className="works">
-              <Link to>
+              <Link to={"http://growssify.vercel.app/"} target="_blank">
                 <div className="link-top" id="work-1"></div>
                 <div className="link-bottom">
                   <h2>Growssify</h2>
@@ -79,7 +79,7 @@ function Home() {
                   </p>
                 </div>
               </Link>
-              <Link>
+              <Link to={"http://kasivodrums.vercel.app/"} target="_blank">
                 <div className="link-top" id="work-2"></div>
                 <div className="link-bottom">
                   <h2>Kasivo drums</h2>
@@ -92,11 +92,17 @@ function Home() {
                   </p>
                 </div>
               </Link>
-              <Link>
+              <Link to={"http://fidelmuthomi.vercel.app/"} target="_blank">
                 <div className="link-top" id="work-3"></div>
                 <div className="link-bottom">
-                  <h2>Netizone</h2>
-                  <p></p>
+                  <h2>Fidel Muthomi</h2>
+                  <p>
+                    A professional portfolio web application built to highlight
+                    full-stack development and graphic design expertise. It
+                    highlights end-to-end software engineering capabilities,
+                    creative graphic design work, and production-ready SaaS
+                    projects.
+                  </p>
                 </div>
               </Link>
             </div>
@@ -125,12 +131,28 @@ function Home() {
               </div>
               <div className="build-cont">
                 <span className="material-symbols-outlined" id="service-icon">
-                  captive_portal
+                  cloud
                 </span>
-                <h2>Portfolios</h2>
+                <h2>Cloud services</h2>
                 <p>
-                  We transform your professional achievements into sleek,
-                  responsive web applications that capture client attention.
+                  We deploy your software into fast, reliable cloud architecture
+                  that keeps your services running around the clock.
+                </p>
+                <Link to={"/services"}>
+                  Learn more
+                  <span className="material-symbols-outlined">
+                    arrow_right_alt
+                  </span>
+                </Link>
+              </div>
+              <div className="build-cont">
+                <span className="material-symbols-outlined" id="service-icon">
+                  apk_install
+                </span>
+                <h2>App development</h2>
+                <p>
+                  We build fast, responsive mobile applications that deliver
+                  seamless user experiences and keep your audience coming back.
                 </p>
                 <Link to={"/services"}>
                   Learn more

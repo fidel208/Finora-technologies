@@ -1,13 +1,3 @@
-.body {
-  height: auto;
-  width: 100%;
-}
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  backdrop-filter: blur(12px);
-}
 .home {
   display: flex;
   align-items: center;
@@ -170,10 +160,13 @@
   background-size: cover;
 }
 #work-1 {
-  background-image: url(../../assets/Growssify.png);
+  background-image: url(../../assets/growssify.png);
 }
 #work-2 {
-  background-image: url(../../assets/kasivodrums.png);
+  background-image: url(../../assets/kasivodrumz.png);
+}
+#work-3 {
+  background-image: url(../../assets/fidelmuthomi.png);
 }
 .link-bottom {
   display: flex;
@@ -224,8 +217,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 300px;
-  height: 250px;
+  width: 320px;
+  height: 280px;
   border: solid 1px gray;
   border-radius: 12px;
   padding: 10px 20px;
@@ -257,4 +250,89 @@
 }
 .dark .build-cont a {
   color: #e0dbe2;
+}
+
+@media (max-width: 1024px) {
+  .home section > div {
+    width: 90%;
+  }
+  .home-s1-top p {
+    font-size: 50px;
+    max-width: 450px;
+  }
+  .works a {
+    width: 32%;
+    height: 550px;
+  }
+  .build-cont {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home section > div {
+    width: 90%;
+  }
+  .home-section {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0;
+  }
+  .home-s1-top p {
+    max-width: 300px;
+    font-size: 45px;
+  }
+  .home-s1-btns a {
+    width: 120px;
+  }
+  .home-s1-btns button {
+    max-width: 120px;
+    font-size: 15px;
+    height: 40px;
+  }
+  .home-s1-bottom h1 {
+    font-size: 22px;
+  }
+  .bottom-links {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .home-s1-bottom a {
+    font-size: 17px;
+  }
+  .work {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  .work p {
+    font-size: 18px;
+  }
+  #link-to-projects a {
+    font-size: 18px;
+  }
+  .works {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .works a {
+    width: 100%;
+    height: 480px;
+  }
+  .builds {
+    height: auto;
+  }
+  .builds > p {
+    font-size: 22px;
+  }
+  .builds-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .builds-container p {
+    font-size: 18px;
+  }
+  .build-cont {
+    height: 230px;
+  }
 }

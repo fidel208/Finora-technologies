@@ -36,7 +36,7 @@ function Services() {
                 </ul>
               </span>
             </div>
-            <div className="service-box">
+            <div className="service-box" id="service-box2">
               <span>
                 <h3>App development</h3>
                 <p>
@@ -50,6 +50,21 @@ function Services() {
                 </ul>
               </span>
               <img src="src/assets/app-development.jpg" alt="service-2" />
+            </div>
+            <div className="service-box">
+              <img src="src/assets/cloud.jpg" alt="service-2" />
+              <span>
+                <h3>Cloud Services</h3>
+                <p>
+                  Designing secure, scalable cloud environments to host your
+                  applications with zero downtime and automatic backups.
+                </p>
+                <ul>
+                  <li>Saas applications</li>
+                  <li>Platform as a service</li>
+                  <li>Infrastructure as a service</li>
+                </ul>
+              </span>
             </div>
           </div>
         </div>

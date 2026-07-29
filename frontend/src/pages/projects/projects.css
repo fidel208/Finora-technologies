@@ -94,3 +94,39 @@
 .box-details a:hover {
   color: #6c3483;
 }
+
+@media (max-width: 1024px) {
+  .projects {
+    width: 90%;
+  }
+  .project-box {
+    gap: 30px;
+  }
+  .project-type span {
+    width: 130px;
+    font-size: 15px;
+  }
+  .project-box img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    width: 90%;
+  }
+  .projects-container {
+    gap: 100px;
+  }
+  .project-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-box img {
+    width: 380px;
+    height: 250px;
+  }
+  #project1 {
+    flex-direction: column-reverse;
+  }
+}

@@ -97,3 +97,30 @@
 .dark .service-box p {
   color: #e0dbe2;
 }
+
+@media (max-width: 1024px) {
+  .services {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    width: 90%;
+  }
+  .service-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .service-container {
+    gap: 80px;
+  }
+  .service-box img {
+    width: 380px;
+    height: 300px;
+  }
+  #service-box2 {
+    flex-direction: column-reverse;
+  }
+}

@@ -7,6 +7,15 @@ import { useTheme } from "../../theme/Theme";
 function Header() {
   const { mode, handleModes } = useTheme();
 
+  const [openDropdown, setOpenDropdown] = useState(false);
+  const handleDropdown = () => {
+    if (openDropdown === false) {
+      setOpenDropdown(true);
+    } else {
+      setOpenDropdown(false);
+    }
+  };
+
   return (
     <>
       <div className={`header ${mode}`}>
@@ -39,11 +48,27 @@ function Header() {
                 {mode === "light" ? "dark_mode" : "light_mode"}
               </span>
             </button>
+            <button id="toggle-dropdown" onClick={handleDropdown}>
+              <span className="material-symbols-outlined">
+                {openDropdown === false ? "menu" : "close"}
+              </span>
+            </button>
             <NavLink to={"/contact"}>
               <button id="contact-us-btn">Contact us</button>
             </NavLink>
           </div>
         </nav>
+        {openDropdown && (
+          <div className="nav-dropdown">
+            <Link to={"/"}>Home</Link>
+            <Link to={"/about"}>About</Link>
+            <Link to={"/services"}>Services</Link>
+            <Link to={"/projects"}>Projects</Link>
+            <button>
+              <Link to={"/contact"}>Contact us</Link>
+            </button>
+          </div>
+        )}
       </div>
     </>
   );

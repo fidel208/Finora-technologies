@@ -5,7 +5,7 @@ footer {
   padding: 20px;
   color: white;
 }
-footer.light {
+footer {
   background-color: #1d364e;
 }
 footer.dark {
@@ -154,4 +154,53 @@ footer.dark {
 }
 .footer-icons i:hover {
   background-color: #2b4f70;
+}
+
+.footer-icons a {
+  text-decoration: none;
+}
+@media (max-width: 1024px) {
+  .footer {
+    width: 90%;
+  }
+  .footer h1 {
+    font-size: 20px;
+  }
+  #subscribe input {
+    width: 120px;
+  }
+  .footer p {
+    font-size: 15px;
+  }
+  .footer a {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    width: 90%;
+    height: auto;
+    gap: 30px;
+  }
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: auto;
+    justify-content: center;
+  }
+  .top1 {
+    gap: 30px;
+  }
+  #subscribe input {
+    height: 20px;
+    width: 150px;
+  }
+  #subscribe button {
+    height: 45px;
+  }
+  .footer-bottom p {
+    max-width: 200px;
+  }
 }

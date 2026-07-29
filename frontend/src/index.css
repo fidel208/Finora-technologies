@@ -9,4 +9,6 @@ body {
   font-style: normal;
   font-size: 20px;
   color: #1d1820;
+  height: auto;
+  width: 100%;
 }

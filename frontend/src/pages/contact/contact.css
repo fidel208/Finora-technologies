@@ -11,8 +11,7 @@
   background-color: #0b071e;
 }
 .contact {
-  max-width: 63%;
-  width: 100%;
+  width: 63%;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -53,6 +52,9 @@
 .form-span label {
   font-size: 22px;
   color: black;
+}
+.dark .form-span label {
+  color: white;
 }
 .form-span input {
   padding: 10px;
@@ -113,4 +115,38 @@
 .handles a:hover {
   background-color: #e1a6f8;
   transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    width: 90%;
+  }
+  .handles {
+    width: 300px;
+  }
+  .contact-box {
+    justify-content: space-evenly;
+  }
+  .handles a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    width: 90%;
+  }
+  .contact-head {
+    text-align: center;
+  }
+  .contact-box {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .contact-box form {
+    width: 100%;
+  }
+  .form-span label {
+    font-size: 20px;
+  }
 }
