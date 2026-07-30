@@ -30,6 +30,7 @@ function Footer() {
             </div>
             <div className="top2">
               <h1>Company</h1>
+              <Link to={"/"}>Home</Link>
               <Link to={"/about"}>About</Link>
               <Link to={"/services"}>Services</Link>
               <Link to={"/projects"}>Projects</Link>
@@ -37,8 +38,9 @@ function Footer() {
             </div>
             <div className="top3">
               <h1>Services</h1>
-              <Link>Web applications</Link>
-              <Link>Mobile applications</Link>
+              <Link to={"/services"}>Web development</Link>
+              <Link to={"/services"}>App development</Link>
+              <Link to={"/services"}>Cloud services</Link>
             </div>
             <div className="top4">
               <h1>Contact</h1>
