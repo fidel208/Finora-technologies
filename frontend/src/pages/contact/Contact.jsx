@@ -19,18 +19,21 @@ function Contact() {
     setSendMessage(true);
 
     try {
-      const response = await fetch("http://localhost:3000/api/message", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const response = await fetch(
+        "https://finora-technologies-backend.onrender.com/api/message",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: email,
+            fullname: fullname,
+            phone: phone,
+            message: message,
+          }),
         },
-        body: JSON.stringify({
-          email: email,
-          fullname: fullname,
-          phone: phone,
-          message: message,
-        }),
-      });
+      );
 
       const data = await response.json();
 

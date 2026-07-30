@@ -22,7 +22,7 @@ function Services() {
           </div>
           <div className="service-container">
             <div className="service-box">
-              <img src="src/assets/web-development.jpg" alt="service-1" />
+              <img src="/web-development.jpg" alt="service-1" />
               <span>
                 <h3>Web development</h3>
                 <p>
@@ -49,10 +49,10 @@ function Services() {
                   <li>Api development</li>
                 </ul>
               </span>
-              <img src="src/assets/app-development.jpg" alt="service-2" />
+              <img src="/app-development.jpg" alt="service-2" />
             </div>
             <div className="service-box">
-              <img src="src/assets/cloud.jpg" alt="service-2" />
+              <img src="/cloud.jpg" alt="service-2" />
               <span>
                 <h3>Cloud Services</h3>
                 <p>

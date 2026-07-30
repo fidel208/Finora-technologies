@@ -35,10 +35,10 @@ function Projects() {
                   <i className="fa-solid fa-arrow-up-right-from-square"></i>
                 </Link>
               </div>
-              <img src="src/assets/growssify.png" alt="project-1" />
+              <img src="/growssify.png" alt="project-1" />
             </div>
             <div className="project-box">
-              <img src="src/assets/kasivodrumz.png" alt="project-2" />
+              <img src="/kasivodrumz.png" alt="project-2" />
               <div className="box-details">
                 <h2>Kasivo drums</h2>
                 <div className="project-type">
@@ -77,7 +77,7 @@ function Projects() {
                   <i className="fa-solid fa-arrow-up-right-from-square"></i>
                 </Link>
               </div>
-              <img src="src/assets/fidelmuthomi.png" alt="project-1" />
+              <img src="/fidelmuthomi.png" alt="project-1" />
             </div>
           </div>
         </div>

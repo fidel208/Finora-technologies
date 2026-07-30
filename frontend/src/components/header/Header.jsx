@@ -21,7 +21,7 @@ function Header() {
       <div className={`header ${mode}`}>
         <nav>
           <div className="logo">
-            <img src="src/assets/finora-rmv.png" alt="finora-logo" />
+            <img src="/finora-rmv.png" alt="finora-logo" />
             <h1>
               <Link to={"/"}>Finora Technologies</Link>
             </h1>

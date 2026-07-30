@@ -132,9 +132,6 @@
   flex-direction: row;
   gap: 5px;
 }
-.dark #link-to-projects a {
-  color: white;
-}
 .works {
   width: 100%;
   display: flex;
@@ -248,8 +245,9 @@
   flex-direction: row;
   align-items: center;
 }
-.dark .build-cont a {
-  color: #e0dbe2;
+
+.dark a {
+  color: #c648f8;
 }
 
 @media (max-width: 1024px) {
