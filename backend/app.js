@@ -47,11 +47,8 @@ app.post("/api/message", async (req, res) => {
   };
 
   try {
-    await Promise.all([
-      transporter.sendMail(userMailOptions),
-      transporter.sendMail(adminMailOptions),
-    ]);
-
+    await transporter.sendMail(userMailOptions);
+    await transporter.sendMail(adminMailOptions);
     res.status(200).json({ message: "Registration received" });
   } catch (error) {
     console.error("Nodemailer error:", error);
