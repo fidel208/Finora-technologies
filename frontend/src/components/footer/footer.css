@@ -129,8 +129,15 @@ footer.dark {
 
 .footer-bottom {
   display: flex;
+  flex-direction: column;
+}
+.bottom-1 {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.bottom-2 p > i {
+  color: rgb(240, 55, 55);
 }
 .footer-bottom p {
   font-size: 18px;

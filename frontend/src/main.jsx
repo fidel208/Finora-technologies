@@ -9,6 +9,7 @@ import Contact from "./pages/contact/Contact";
 import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./theme/Theme";
+import Admin from "./pages/admin/Admin";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
   { path: "/services", element: <Services /> },
   { path: "/projects", element: <Projects /> },
   { path: "/contact", element: <Contact /> },
+  { path: "/admin", element: <Admin /> },
 ]);
 
 createRoot(document.getElementById("root")).render(

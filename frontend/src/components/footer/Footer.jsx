@@ -56,18 +56,25 @@ function Footer() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>
-              &copy; <span>{new Date().getFullYear()}</span>. Finora
-              Technologies. All rights reserved
-            </p>
-            <span className="footer-icons">
-              <a href="https://wa.link/m3ih9m" target="_blank">
-                <i className="fa-brands fa-whatsapp"></i>
-              </a>
-              <a href="mailto:fidelmuthomi007@gmail.com" target="_blank">
-                <i className="fa-regular fa-envelope"></i>
-              </a>
-            </span>
+            <div className="bottom-1">
+              <p>
+                &copy; <span>{new Date().getFullYear()}</span>. Finora
+                Technologies. All rights reserved
+              </p>
+              <span className="footer-icons">
+                <a href="https://wa.link/m3ih9m" target="_blank">
+                  <i className="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="mailto:fidelmuthomi007@gmail.com" target="_blank">
+                  <i className="fa-regular fa-envelope"></i>
+                </a>
+              </span>
+            </div>
+            <div className="bottom-2">
+              <p>
+                <i className="fa-solid fa-location-dot"></i> Kwale, Kenya
+              </p>
+            </div>
           </div>
         </div>
       </footer>
