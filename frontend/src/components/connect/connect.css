@@ -47,6 +47,9 @@
   .connect {
     width: 90%;
   }
+  #connect {
+    padding-bottom: 80px;
+  }
 }
 
 @media (max-width: 768px) {

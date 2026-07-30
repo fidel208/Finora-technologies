@@ -108,6 +108,9 @@
   .services {
     width: 90%;
   }
+  #services {
+    padding-bottom: 80px;
+  }
   .service-box {
     display: flex;
     flex-direction: column;
