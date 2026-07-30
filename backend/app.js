@@ -13,15 +13,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 const transporter = nodemailer.createTransport({
-  host: "smtp.gmail.com",
+  host: "74.125.142.108",
   port: 587,
   secure: false,
+  servername: "smtp.gmail.com",
   auth: {
     user: process.env.USER_EMAIL,
     pass: process.env.USER_PASS,
-  },
-  lookup: (hostname, options, callback) => {
-    return dns.lookup(hostname, { family: 4 }, callback);
   },
 });
 
