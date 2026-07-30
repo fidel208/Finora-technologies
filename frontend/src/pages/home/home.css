@@ -254,6 +254,10 @@
   .home section > div {
     width: 90%;
   }
+  .home section {
+    height: auto;
+    padding-bottom: 50px;
+  }
   .home-s1-top p {
     font-size: 50px;
     max-width: 450px;
