@@ -13,12 +13,13 @@ app.use(cors());
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 465,
-  secure: true,
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.USER_EMAIL,
     pass: process.env.USER_PASS,
   },
+  family: 4,
 });
 
 app.post("/api/message", async (req, res) => {
@@ -52,7 +53,9 @@ app.post("/api/message", async (req, res) => {
     res.status(200).json({ message: "Registration received" });
   } catch (error) {
     console.error("Nodemailer error:", error);
-    res.status(500).json({ error: "Failed to send emails" });
+    res
+      .status(500)
+      .json({ error: "Failed to send emails", details: error.message });
   }
 });
 
