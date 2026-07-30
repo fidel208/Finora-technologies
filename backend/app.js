@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import nodemailer from "nodemailer";
 import dotenv from "dotenv";
+import dns from "dns";
 
 dotenv.config();
 
@@ -19,7 +20,9 @@ const transporter = nodemailer.createTransport({
     user: process.env.USER_EMAIL,
     pass: process.env.USER_PASS,
   },
-  family: 4,
+  lookup: (hostname, options, callback) => {
+    return dns.lookup(hostname, { family: 4 }, callback);
+  },
 });
 
 app.post("/api/message", async (req, res) => {
