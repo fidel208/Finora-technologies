@@ -63,6 +63,7 @@
   outline: none;
   width: 90%;
   font-size: 18px;
+  background-color: #faf5fc;
 }
 .form-span input:focus {
   border: solid 1px #6c3483;
@@ -71,6 +72,7 @@
   padding: 10px;
   border-radius: 10px;
   border: solid 1px rgb(214, 210, 210);
+  background-color: #faf5fc;
   outline: none;
   width: 90%;
   font-size: 18px;
@@ -78,6 +80,11 @@
 }
 .form-span textarea:focus {
   border: solid 1px #6c3483;
+}
+.dark .form-span input,
+.dark .form-span textarea {
+  background-color: #0b071e;
+  color: white;
 }
 .contact-box button {
   margin-top: 10px;
