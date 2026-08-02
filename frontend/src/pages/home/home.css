@@ -127,7 +127,7 @@
 .dark #link-to-projects > p {
   color: white;
 }
-#link-to-projects a {
+#link-to-projects > a {
   font-size: 20px;
   text-decoration: none;
   display: flex;
@@ -135,13 +135,16 @@
   gap: 5px;
 }
 .works {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
 .works a {
-  width: 370px;
+  width: 31%;
+  flex-grow: 1;
   min-height: 460px;
+  padding-bottom: 20px;
+  height: auto;
   border: solid 1px gray;
   border-radius: 12px;
   display: grid;
@@ -270,8 +273,7 @@
     gap: 20px;
   }
   .works a {
-    width: 320px;
-    height: 460px;
+    height: 550px;
   }
   .build-cont {
     width: 280px;
