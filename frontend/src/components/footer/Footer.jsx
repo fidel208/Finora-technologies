@@ -53,6 +53,9 @@ function Footer() {
               <Link to={"tel:+254115931207"} target="_blank">
                 Call us
               </Link>
+              <Link to={"/admin"} target="_blank">
+                Admin portal
+              </Link>
             </div>
           </div>
           <div className="footer-bottom">
