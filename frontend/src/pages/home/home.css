@@ -103,6 +103,9 @@
   flex-direction: row;
   gap: 20px;
 }
+.dark .bottom-links > a {
+  color: #239b56;
+}
 
 .work {
   display: flex;
