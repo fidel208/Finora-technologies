@@ -65,7 +65,7 @@ function Footer() {
                 Technologies. All rights reserved
               </p>
               <span className="footer-icons">
-                <a href="https://wa.link/m3ih9m" target="_blank">
+                <a href="https://wa.link/9n3b8k" target="_blank">
                   <i className="fa-brands fa-whatsapp"></i>
                 </a>
                 <a href="mailto:fidelmuthomi007@gmail.com" target="_blank">

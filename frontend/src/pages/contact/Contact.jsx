@@ -116,11 +116,11 @@ function Contact() {
                   <i className="fa-regular fa-envelope"></i>{" "}
                   contact@finoratechnologies.com
                 </a>
-                <a href="https://wa.link/m3ih9m" target="_blank">
-                  <i className="fa-brands fa-whatsapp"></i> 0789455874
+                <a href="https://wa.link/9n3b8k" target="_blank">
+                  <i className="fa-brands fa-whatsapp"></i> 0115931207
                 </a>
                 <a href="tel:+254115931207" target="_blank">
-                  <i className="fa-solid fa-phone"></i> 0115931207
+                  <i className="fa-solid fa-phone"></i> Call us
                 </a>
               </div>
             </div>
