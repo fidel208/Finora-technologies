@@ -128,6 +128,10 @@
   color: white;
   background-color: #6c3483;
   font-size: 20px;
+  transition: ease 0.5s background-color;
+}
+#contact-us-btn:hover {
+  background-color: #3d134e;
 }
 
 .nav-dropdown {
@@ -172,6 +176,10 @@
   color: white;
   background-color: #6c3483;
   font-size: 20px;
+  transition: ease 0.5s background-color;
+}
+.nav-dropdown button:hover {
+  background-color: #3d134e;
 }
 .nav-dropdown button > a {
   color: white;

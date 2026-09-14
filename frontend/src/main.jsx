@@ -10,6 +10,8 @@ import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./theme/Theme";
 import Admin from "./pages/admin/Admin";
+import Dashboard from "./pages/dashboard/Dashboard";
+import NotFound from "./pages/not-found/NotFound";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -18,6 +20,8 @@ const router = createBrowserRouter([
   { path: "/projects", element: <Projects /> },
   { path: "/contact", element: <Contact /> },
   { path: "/admin", element: <Admin /> },
+  { path: "/admin/dashboard", element: <Dashboard /> },
+  { path: "*", element: <NotFound /> },
 ]);
 
 createRoot(document.getElementById("root")).render(

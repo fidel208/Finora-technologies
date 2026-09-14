@@ -7,9 +7,9 @@ function Admin() {
     <>
       <div className="login">
         <div className="login-box">
-          <h1>Sign in to continue</h1>
+          <h1>Login to continue</h1>
           <p>
-            Use your admin credentials to login into your admin account an
+            Use your admin credentials to sign in into your admin account and
             manage your website contents.
           </p>
           <form>
@@ -21,11 +21,12 @@ function Admin() {
               <label htmlFor="password">Password</label>
               <input type="password" name="passowrd" id="password" />
             </span>
-            <button type="button">Login</button>
+            <button type="button">SIgn in</button>
           </form>
           <Link to={"/"}>
             {" "}
-            <i class="fa-solid fa-arrow-left-long"></i> Back to the main page
+            <i className="fa-solid fa-arrow-left-long"></i> Back to the main
+            page
           </Link>
         </div>
       </div>
