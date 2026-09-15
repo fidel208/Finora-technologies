@@ -1,0 +1,26 @@
+.admin-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#hello {
+  font-weight: bold;
+  font-size: 20px;
+}
+#welcome {
+  font-size: 20px;
+}
+#dp {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: white;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://www.gravatar.com/avatar/0000000…?d=mp&f=y);
+}
