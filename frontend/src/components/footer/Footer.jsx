@@ -12,7 +12,7 @@ function Footer() {
           <div className="footer-top">
             <div className="top1">
               <div className="foot-top-words">
-                <h1>Finora Technologies</h1>
+                <h1>Finora technologies</h1>
                 <p>
                   We transform simple ideas into smart, high-performing
                   software, built for reliability and real-time responsiveness.
@@ -62,7 +62,7 @@ function Footer() {
             <div className="bottom-1">
               <p>
                 &copy; <span>{new Date().getFullYear()}</span>. Finora
-                Technologies. All rights reserved
+                technologies. All rights reserved
               </p>
               <span className="footer-icons">
                 <a href="https://wa.link/9n3b8k" target="_blank">

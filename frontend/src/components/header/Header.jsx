@@ -23,7 +23,7 @@ function Header() {
           <div className="logo">
             <img src="/finora-rmv.png" alt="finora-logo" />
             <h1>
-              <Link to={"/"}>Finora Technologies</Link>
+              <Link to={"/"}>Finora technologies</Link>
             </h1>
           </div>
           <div className="links">
