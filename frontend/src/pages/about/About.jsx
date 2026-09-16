@@ -43,7 +43,7 @@ function About() {
                     <strong>Founder and CEO</strong>
                   </p>
                   <a
-                    href="https://fidelmuthomi.vercel.app/"
+                    href="https://fidelmuthomi.tech/"
                     target="_blank"
                     id="ceo-name"
                   >
